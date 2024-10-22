@@ -19,7 +19,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Add friend's repository as a remote
-      run: git remote add friend https://crashkat:${{ secrets.FRIEND_REPO_PAT }}@github.com/crashkat/gh_repo_synch_test.git
+      run: git remote add friend https://crashkat:${{ secrets.FRIEND_REPO_PAT }}@github.com/crashkat/gh_repo_synch_test
 
     - name: Push changes to friend's repository
       run: |
