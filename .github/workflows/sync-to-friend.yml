@@ -15,8 +15,8 @@ jobs:
 
     - name: Set up Git
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config user.name 'maacah'
+        git config user.email 'maacah@live.com'
 
     - name: Add friend's repository as a remote
       run: git remote add friend https://crashkat:${{ secrets.FRIEND_REPO_PAT }}@github.com/crashkat/gh_repo_synch_test
