@@ -24,9 +24,13 @@ jobs:
     - name: Push changes to friend's repository
       run: |
         git fetch friend
+        echo "fetch friend complete"
         git checkout -b integration
+        echo "checkout integration branch complete"
         git merge main
+        echo "merge to main complete"
         git push friend integration
+        echo "push remote integration branch complete"
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
